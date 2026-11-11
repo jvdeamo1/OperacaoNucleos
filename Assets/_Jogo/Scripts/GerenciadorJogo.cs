@@ -152,7 +152,11 @@ public class GerenciadorJogo : MonoBehaviour
         Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
-
+    public void VoltarAoMenu()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("MenuPrincipal");
+    }
     public void Sair()
     {
         Application.Quit(); // Fecha o executavel; nao encerra o Play no Editor.
